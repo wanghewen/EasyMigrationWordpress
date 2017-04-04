@@ -6,7 +6,7 @@ This repo is meant to provide easy migration support for **Wordpress** users for
 
  - Docker
 
-##Instructions
+## Instructions
 
  1. Install docker: If using Ubuntu, you can refer https://docs.docker.com/engine/installation/linux/ubuntu/#install-using-the-repository
  2. Instal docker-compose: https://docs.docker.com/compose/install/#alternative-install-options (can consider using pip install docker-compose)
