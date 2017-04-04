@@ -29,6 +29,7 @@ services:
         image: wordpress:latest
         volumes:
           - ./:/var/www/html #Same as WP_FOLDER
+          - ./server_config/mpm_prefork.conf:/etc/apache2/mods-enabled/mpm_prefork.conf
         ports:
          - "80:80"
         restart: always
@@ -42,9 +43,9 @@ services:
             context: ./server_config
             args:
                 #####################You must change the url here when used in the remote server###############################
-                WP_HOME: http://localhost
+                WP_HOME: http://104.236.141.122
                 #If you use port 80, please leave the port empty. You can specify other ports here. The port should be the same as the external port used in php.
-                WP_SITEURL: http://localhost
+                WP_SITEURL: http://104.236.141.122
                 #####################Used in production########################################################################
                 WP_FOLDER: ./
         networks:
