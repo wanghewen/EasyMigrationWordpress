@@ -94,3 +94,6 @@ if ( !defined('ABSPATH') )
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** 为了解决WordPress安装主题或者插件的权限问题。 */
+define('FS_METHOD','direct');
